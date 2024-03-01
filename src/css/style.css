@@ -1,0 +1,141 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid-container{
+    display: grid;
+    width: 100%;
+    grid: 'cabecalho cabecalho cabecalho' 10vh
+'conteudo conteudo conteudo'80vh 
+'rodape rodape rodape' 10vh; 
+}
+
+.cabecalho{
+    
+    grid-area: cabecalho;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+
+    
+}
+
+.cabecalho .cabecalho-logo {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho .cabecalho-logo ul{
+    display: flex;
+}
+
+.cabecalho .cabecalho-logo ul li{
+    margin: 0 25px;
+    font-size: 20px;
+    color: rgb(136, 136, 136);
+    
+}
+
+.cabecalho .cabecalho-logo ul li:hover{
+    font-weight: bold;
+    color: #000;
+    
+}
+
+.title{
+    margin-right: 80px;
+    background-image: linear-gradient( 90deg, #7C3874
+    , #D43289, #F28756);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.cabecalho .btn{
+    background-image: linear-gradient( 90deg, #7C3874
+    , #D43289, #F28756);
+    width: 180px;
+    border: none;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 40px;
+    color: #fff;
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+
+.conteudo{
+    
+    grid-area: conteudo;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.conteudo h1, .conteudo p{
+    
+}
+
+.conteudo h1{
+    font-size: 80px;
+    margin-bottom: 30px;
+    width: 40%;
+}
+
+.conteudo p{
+    line-height: 40px;
+    font-weight: 300;
+    color: rgb(136, 136, 136);
+    font-size: 20px;
+    width: 30%;
+}
+
+.conteudo button{
+    width: 180px;
+    padding: 20px;
+    border: 1px gainsboro solid;
+    background-color: #fff;
+    border-radius: 25px;
+    outline: none;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    background-image: linear-gradient( 90deg, #7C3874
+    , #D43289, #F28756);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.absoluto{
+    width: 640px;
+    position: absolute;
+    right: 350px;
+   bottom: 80px;
+
+}
+
+.rodape{
+    grid-area: rodape;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+}
+
+.fa-twitter, .fa-instagram-square, .fa-youtube{
+    color: rgb(136, 136, 136);;
+    font-size: 30px;
+    margin: 0 20px;
+    
+}
+
+.rodape p{
+    margin-left: 20px;
+    color: rgb(136, 136, 136);;
+}
