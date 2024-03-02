@@ -1,0 +1,133 @@
+@media(max-width:1600px){
+    .conteudo h1{
+        width: 50%;
+    }
+    
+    .conteudo .absoluto{
+        width: 500px;
+        top: 50px;
+    }
+}
+
+@media(max-width:1440px){
+    .conteudo h1{
+        width: 40%;
+        font-size: 50px;
+    }
+    .conteudo .absoluto{
+        width: 500px;
+        top: 50px;
+        
+    }
+}
+
+@media(max-width:1210px){
+   .conteudo, .cabecalho, .rodape{
+    padding: 0 10px;
+   }
+    
+    .conteudo h1{
+       font-size: 30px;
+       width: 100%;
+       margin: 0;
+    }
+
+    .conteudo p{
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .conteudo .absoluto{
+        width: 480px;
+        top: 0;
+        left: 30vh;
+    }
+
+    .conteudo .responsivo{
+        position: absolute;
+        bottom: 50px;
+        text-align: center;
+    }
+
+    .rodape{
+            justify-content: center;
+    }
+}
+
+@media(max-width:1000px){
+    .grid-container{
+        display: grid;
+        width: 100%;
+        grid: 'cabecalho cabecalho cabecalho' 35vh
+              'conteudo conteudo conteudo'50vh 
+              'rodape rodape rodape' 10vh; 
+    }
+    
+    .cabecalho, .cabecalho-logo, .cabecalho .cabecalho-logo ul{
+        flex-direction: column;
+        justify-content: space-between;
+       
+    }
+
+    .cabecalho-logo{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .cabecalho-logo h1, .cabecalho .btn{
+        margin: 0;
+    }
+
+    .cabecalho-logo nav ul li{
+        padding: 8px;
+    }
+
+    .conteudo{
+        align-items: center;
+    }
+    .conteudo .absoluto{
+        width: 280px;
+        left: 35vw;
+        top: 0;
+    }
+
+    .conteudo .responsivo{
+        bottom: 0;
+    }
+}
+
+@media(max-width:800px){
+    .conteudo .absoluto{
+        width: 280px;
+        left: 30vw;
+        top: 0;
+    }
+}
+
+@media(max-width:657px){
+    .conteudo .absoluto{
+        width: 280px;
+        left: 25vw;
+        top: 0;
+    }
+}
+
+@media(max-width:515px){
+    .conteudo .absoluto{
+        width: 230px;
+        
+        left: 25vw;
+        top: 0;
+    }
+}
+
+@media(max-width:397px){
+    .conteudo .absoluto{
+        width: 200px;
+        
+        left: 20vw;
+        top: 0;
+    }
+}
