@@ -131,3 +131,12 @@
         top: 0;
     }
 }
+
+@media(max-width:325px){
+    .conteudo .absoluto{
+        width: 170px;
+        
+        left: 20vw;
+        top: 0;
+    }
+}
